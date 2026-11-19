@@ -1,0 +1,34 @@
+<%!
+    // Escapes values before they are inserted into HTML text or quoted attributes.
+    private String escapeHtml(Object value) {
+        if (value == null) {
+            return "Chưa có thông tin";
+        }
+
+        String text = String.valueOf(value);
+        StringBuilder escaped = new StringBuilder(text.length());
+        for (int index = 0; index < text.length(); index++) {
+            char character = text.charAt(index);
+            switch (character) {
+                case '&':
+                    escaped.append("&amp;");
+                    break;
+                case '<':
+                    escaped.append("&lt;");
+                    break;
+                case '>':
+                    escaped.append("&gt;");
+                    break;
+                case '"':
+                    escaped.append("&quot;");
+                    break;
+                case '\'':
+                    escaped.append("&#39;");
+                    break;
+                default:
+                    escaped.append(character);
+            }
+        }
+        return escaped.toString();
+    }
+%>

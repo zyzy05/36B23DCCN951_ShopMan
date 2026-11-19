@@ -1,0 +1,9 @@
+target/
+.classpath
+.project
+.settings/
+.vscode/
+*.log
+.DS_Store
+
+.fake
