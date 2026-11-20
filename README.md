@@ -1,6 +1,4 @@
-# ShopMan – phiên bản JSP – DAO – Model (KHÔNG SỬ DỤNG SERVLET)
-
-Phiên bản 2.0 được tạo lại theo yêu cầu: **không có Servlet, không có Filter, không khai báo Servlet trong mã Java**. Các trang JSP nhận request và hiển thị kết quả; truy vấn SQL và xử lý nghiệp vụ dữ liệu được đặt trong DAO. Model chỉ chứa dữ liệu.
+# ShopMan – phiên bản JSP – DAO – Model 
 
 ## Công nghệ
 - JDK 21, Maven
